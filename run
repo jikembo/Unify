@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -N case-unify
+#$ -pe orte 108
+#$ -q large.q
+#$ -cwd
+#$ -j y
+#$ -M xqwang@gwmail.gwu.edu
+#$ -m e
+
+/usr/bin/mpirun -np $NSLOTS ./unify
